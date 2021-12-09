@@ -84,8 +84,6 @@ func (e *Engine) UserUpdate(user *models.User) error {
 }
 
 func (e *Engine) UserDelete(id int) error {
-	fmt.Println(id)
-
 	query := `delete from "users" where id=$1`
 	_, err := e.db.Exec(query, id)
 	if err != nil {
