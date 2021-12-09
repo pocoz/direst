@@ -1,12 +1,12 @@
 package api
 
 import (
-	"github.com/dieqnt/direst/models"
 	"net/http"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
 
+	"github.com/dieqnt/direst/models"
 	"github.com/dieqnt/direst/storage"
 )
 
